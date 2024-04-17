@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+:root {
+    
+    --transprent-light: rgba(24 , 24, 27, 0.8);
+    --transprent:  rgba(42, 43, 42, 0.418);
+    --white: #ffff;
+    --grey: #757575;
+    --red-transparent:rgba(177, 60, 72, 0.8);
+}
+body{
+   
+    background: url("earth.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+   
+    min-height: 100vh;
+}
+.search-box{
+    width:96%;
+    margin: auto;
+    text-align: center;
+    margin-top: 300px;
+   
+    
+    
+}
+
+.btn{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 36px;
+    
+}
+h1{
+    text-shadow:0 0  10px rgb(37, 173, 219), 0 0 20px blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    padding-left: 100px;
+    
+    
+    
+}
+
+.search-box input{
+    width: 66%;
+    height: 46px;
+    padding: 6px;
+    color: white;
+    background: rgba(24 , 24, 27, 0.8);
+   
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 4%;
+    font-size: .8em;
+    border: none;
+   
+    
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+.error-text {
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+}
+.error-text .error {
+    color: var(--white);
+    background: var(--red-transprent);
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+.error-text .wait {
+    color: var(--white);
+    padding: 10px 25px;
+    background: var(--transprent);
+    border-radius: 8px;     
+}
+
+.container.active .search-box{
+    display: none;
+}
+
+.bottombox2{
+    display: none;
+}
+
+.active .bottombox2{
+    display: contents;
+}
+
+/* // .bottombox */
+.Place{
+    width: 96%;
+    margin: auto;
+    font-size: x-large;
+    margin-top: 6%; ;
+    text-align: center;
+    color: white;
+}
+.timespace{
+    text-align: center;
+    font-size: x-large;
+}
+.bottombox{
+   
+    width: 96%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    color: white;
+    
+    
+   
+   
+    
+}
+.bottombox:hover {
+    box-shadow: 0 0 16px white;
+     
+   
+}
+.weather{
+    display: flex;
+    background-color: var(--transprent);
+
+}
+.icon{
+    width: 40%;
+    text-align: center;
+    
+    
+    margin-right:6% ;
+
+    
+    
+  
+}
+.iconimg{
+    width:  100%;
+    height: 160px;
+    
+    margin-top: 15%;
+    
+}
+.temp{
+    margin-top: 100px;
+}
+/* right side */
+.details{
+   
+    display: flex;
+    padding: 1px;
+    width: 100%;
+    height: 400px;
+    margin: 4px;
+    color: white;
+   
+   
+}
+.col1{
+  
+  width: 50%;
+}
+.col2{
+   
+    width: 50%;
+    
+  }
+  .col1 div{
+    display: flex;
+    text-align: center;
+    padding-top: 18%;
+    
+  }
+  .col2 div{
+    display: flex;
+    text-align: center;
+    padding-top: 18%;
+   
+  }
+
+  .col1 span{
+   
+    width: 50%;
+    text-align: center;
+  }
+  .col1 p{
+    display: inline;
+  }
+
+  .col2 span{
+    
+    width: 50%;
+   
+    text-align: center;
+   
+    
+  
+  }
+  .col2 p{
+    width: 100%;
+    display: inline;
+   
+   
+  }
+
+ 
+
+  /* const API = "dfa47bd33e07e9f2b6419d08052782d7",
+  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=dfa47bd33e07e9f2b6419d08052782d7`; */
