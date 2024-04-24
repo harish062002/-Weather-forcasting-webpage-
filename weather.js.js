@@ -41,6 +41,22 @@ input1.addEventListener("keyup",(e)=>{
     
 })
 
+//get location 
+button1.addEventListener("click", () => {
+  if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(onSuccess);
+     function onSuccess(position){
+      console.log(position)
+      latitude=  position.coords.latitude;
+      longitude=  position.coords.longitude;
+      api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API}`;
+      fetchdata(api)
+      }
+  } else {
+    alert("Your browser does not support geoloaction api");
+  }
+});
+
 //api request for specific city
 function requestapi(city){
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=dfa47bd33e07e9f2b6419d08052782d7`; 
