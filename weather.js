@@ -174,18 +174,18 @@ function background(info){
             break;
       
           case "rain":
-            document.body.style.background = "url(/img/weather-rain.jpg)";
+            document.body.style.background = "url(weather-rain.jpg)";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
         
             break;
           case "shower rain" :
-            document.body.style.background = "url(/img/weather-rain.jpg)";
+            document.body.style.background = "url(weather-rain.jpg)";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
           case "thunderstrome":
-            document.body.style.background = "url(img/weather-thunderstrome.jpg)";
+            document.body.style.background = "url(weather-thunderstrome.jpg)";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
