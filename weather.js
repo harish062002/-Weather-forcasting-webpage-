@@ -188,21 +188,21 @@ function background(info){
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
-          // case "snow":
-          //   document.body.style.background = "url(img/weather-snow.jpg)";
-          //   document.body.style.backgroundSize = "cover";
-          //   document.body.style.backgroundRepeat = "no-repeat";
-          //   break;
-          // case "mist":
-          //   document.body.style.background = "url(img/weather-mist.jpg)";
-          //   document.body.style.backgroundSize = "cover";
-          //   document.body.style.backgroundRepeat = "no-repeat";
-          //   break;
-          // case "haze":
-          //   document.body.style.background = "url(img/weather-mist.jpg)";
-          //   document.body.style.backgroundSize = "cover";
-          //   document.body.style.backgroundRepeat = "no-repeat";
-          //   break;
+          case "snow":
+            document.body.style.background = "url(weather-snow.jpg)";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            break;
+          case "mist":
+            document.body.style.background = "url(weather-mist.jpg)";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            break;
+          case "haze":
+            document.body.style.background = "url(weather-mist.jpg)";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            break;
         default:
             document.body.style.background="url(earth.jpg)";
             document.body.style.backgroundSize="cover";
