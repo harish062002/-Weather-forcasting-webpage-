@@ -196,11 +196,16 @@ function background(info){
             break;
           case "mist":
             document.body.style.background = "url(weather-mist.jpg)";
-            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundSize = "contain";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
           case "haze":
             document.body.style.background = "url(weather-mist.jpg)";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+            break;
+          case "overcast clouds":
+            document.body.style.background = "url(overcastcloud.jpg)";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
