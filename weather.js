@@ -167,7 +167,7 @@ function background(info){
            document.body.style.backgroundSize="cover";
            break;
            case "broken clouds":
-            document.body.style.background = "url(weather-broken-cloud.jpg)";
+            document.body.style.background = "url(weather-cloudy.jpg)";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
         
