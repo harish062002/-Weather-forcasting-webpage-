@@ -206,7 +206,7 @@ function background(info){
             break;
           case "overcast clouds":
             document.body.style.background = "url(overcastcloud.jpg)";
-            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundSize = "contain";
             document.body.style.backgroundRepeat = "no-repeat";
             break;
         default:
