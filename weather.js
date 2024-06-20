@@ -153,6 +153,7 @@ function dispalyTime(info) {
 
 function background(info){
     let des=info.weather[0].description;
+    console.log(des);
     switch(des){
         case "cloudy":
             document.body.style.background="url(earth.jpg)";
