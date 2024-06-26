@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="weather.css">
@@ -75,6 +75,95 @@
 
 
     </div>
+</div>
+
+<script src="weather.js">
+
+
+</script>
+</body>
+</html>
+
+
+
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="icon" href="weathericon.png">
+    <title>The Weather Store | weather App</title>
+    
+</head>
+
+
+<body>
+
+
+<div class="container">
+                
+    <div class="search-box search">
+                     <h1>The Weather Store </h1> 
+                     <div class="input-container">
+                        <input class="inputfield " placeholder="Enter City Name"> 
+                        <button class="btn" ><i class="uil uil-location-point"></i></button> 
+                     </div>
+
+                     <div class="error-text error-container"><p class="error2"> </p> </div>
+    </div>
+
+    <div class="bottombox2">
+        <div class="Place place wrapper">
+            
+            <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+            <div class="country" id="country"> IN </div>  
+
+        </div>
+
+        <div class="bottombox">
+                            
+          <div class="timespace date-container">
+         
+              <div class="time" id="time"> <span class="hours" id="hours">16</span>: <span class="minute " id="minutes">16</span></div>
+              <div class="datespace"> <span class="day" id="day">Friday</span>, <span class="date" id="date-today">12</span><span class="month" id="month">April</span> </div>
+          
+          </div>   
+ 
+          <div class="weather">
+                            
+               <div class="icon">
+                    <div class="iconimg"></div>
+                    <div class="temp1">Temp <span class="temp">30.51</span> &#8451; </div>
+                    <div class="feellike1">Feels Like <span class="feellike">30.51</span> &#8451; </div>
+                    <div class="description">cloudy </div>
+               </div>
+
+               <div class="details">
+                   
+                    <div class="col1">
+                        <div class="min">Min-temp <span class="min1"> <p class="min-temp">30.01</p>              </span>  </div>
+                        <div class="max">Max-temp <span class="max1"> <p class="max-temp">30.01</p><p>&#8451;</p></span>  </div>
+                        <div class="pre">Pressure <span class="pre1"> <p class="pressure">30.01</p><p>Mb</p>     </span>  </div>
+                    </div>
+                                        
+                    <div class="col2">
+                        <div class="hum">Humidity   <span class="hum1"> <p class="humidity">30.01</p>  <p>%</p>     </span> </div>
+                        <div class="vis">Visibility <span class="vis1"> <p class="visibility">30.01</p>             </span> </div>
+                        <div class="win">Windspeed  <span class="win1"> <p class="windspeed">30.01</p> <p>Km/H</p>  </span></div> 
+                    </div>
+                                        
+               </div>
+
+          </div>
+                            
+        </div>
+    </div>
+
 </div>
 
 <script src="weather.js">
