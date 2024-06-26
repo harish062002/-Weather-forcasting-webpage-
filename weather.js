@@ -123,7 +123,7 @@ function dispalyTime(info) {
     const utc = localTime + localOffset;
     const getTime = utc + utcHours;
 
-    const getTimeNow = new Date(getTime);
+    const getTimeNow = new Date();
     const hrs = getTimeNow.getHours();
     const min = getTimeNow.getMinutes();
     
