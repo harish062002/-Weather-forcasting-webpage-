@@ -215,7 +215,195 @@ input:focus{
    
   }
 
+  @media only screen and (max-width: 600px){
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h1{
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        text-transform: capitalize;
+        letter-spacing: .3rem;
+        padding-left:0%;
+        margin-left:2rem ;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;   
+        align-items: center;
+    }
+        
+    .container .search {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25%;
+        padding: 15px 15px;
+    }
+    .container .search h1{
+        text-shadow:0 0  10px rgb(37, 173, 219), 0 0 20px blue ;
+    }
+   
+    .search .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        width: 100%;
+    
+    }
+    .search .input-container input {
+        background: var(--transprent-light);
+        color: var(--white);
+        padding: 10px 15px;
+        width: 100%; 
+        border: none;
+        font-size: 1rem;
+        border-radius: 2em;
+    }
  
 
-  /* const API = "dfa47bd33e07e9f2b6419d08052782d7",
-  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=dfa47bd33e07e9f2b6419d08052782d7`; */
+    .search .input-container .btn i {
+        font-size: 2rem;
+        margin: 10px;
+    }
+    
+    .search .error-container .error-text {
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        text-transform: capitalize;
+    }
+    .error-text.error {
+        color: var(--white);
+        background: var(--red-transprent);
+        padding: 10px 25px;
+        border-radius: 8px;
+    }
+    .error-text.wait {
+        color: var(--white);
+        padding: 10px 25px;
+        background: var(--transprent);
+        border-radius: 8px;     
+    }
+    .container .current  {
+        justify-content: space-between;
+    }
+    .date-container{
+        text-align: center;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    .date-container:hover{
+        box-shadow: 0 0 10px white;
+        z-index: 222;
+        margin: 0;
+    }
+    .date-container .time{
+        font-size: 5rem;
+        font-weight: 100;
+    }
+    .date-container .time  #am-pm {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    .date-container .date {
+        font-size: 1.7rem;
+    }
+    .place {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+    }
+    .container.active .place {
+        display: flex;
+    }
+    .place .time-zone {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    .place .country {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .current {
+        display: none;
+    }
+    .container.active .current{
+        display: flex;
+    }
+    
+    .weather{
+        display: flex;
+        flex-direction: column;
+        border-radius:10px ;
+        height: fit-content;
+    }
+
+    .weather .icon{
+        width: 70%;
+        font-size: 1.5rem;
+        margin: 15px;
+        margin: auto;
+        font-weight: 200;
+
+
+    }
+    .bottombox{
+        width: 86%;
+        border-radius: 20px;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .details .col1,.col2{
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        font-size: 1rem;
+        margin: auto;
+
+        font-weight: 200;
+
+
+    }
+    .details .col1{
+
+        margin-top: 12%;
+        margin-bottom: -26%;
+
+
+    }
+     
+    .col1 div{
+       padding-top: .5rem;
+       margin-top: 0%;
+       justify-content: space-between;
+    }
+    .col1 div span{
+     text-align: right;
+    }
+
+    
+    .col2 div{
+        padding-top: .5rem;
+        margin-top: 0%;
+        justify-content: space-between;
+        font-size: 1rem;
+     }
+     .col2 div span{
+      text-align: right;
+     }
+}
+ 
+
